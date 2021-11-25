@@ -12,51 +12,96 @@ header {
   background-size: cover;
   padding-bottom: 100px;
 }
-/* .navbar {
-  background-color: black;
-} */
+.navbar {
+  /* background-color: black; */
+  padding-left: 16px;
+  display: flex;
+}
 .navbar nav {
   display: flex;
-  justify-content: space-between;
-  padding: 5px 20px;
-  font-size: 18px;
+  justify-content: flex-end;
 }
-.navbar ul li {
+.navbar nav .jivrus {
+  height: 56px;
+  max-width: 380px;
+  display: flex;
+}
+.navbar nav .jivrus:hover {
+  cursor: pointer;
+}
+.navbar nav .jivrus img {
+  padding: 8px 4px 8px 12px;
+}
+.navbar nav .list {
+  display: flex;
+  
+  
+}
+.navbar ul li, .point {
   display: inline;
   font-family: 'Open Sans', sans-serif;
 }
-.navbar a {
-  text-decoration: none;
-  color: rgb(153, 152, 152);
-  padding: 10px 10px;
+.navbar ul li, a i { 
+  padding: 0 13px;
+}
+.navbar ul li i {
+  color: rgb(106, 106, 106, 1);
+}
+.navbar ul li .btn {
+  margin-right: 2px;
+}
+.navbar ul .point {
+  width: 1px;
+  height: 1px;
+  background-color: rgb(106, 106, 106, 1);
+  border: 1px solid rgb(106, 106, 106, 1);
+  border-radius: 50%;
   display: inline-block;
+  vertical-align: middle;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: rgb(106, 106, 106, 1);
+  display: inline-block;
+  transition: all .2s;
+}
+.navbar ul li a:hover {
+  color: rgb(202, 198, 198);
 }
 .navbar .txt-bold {
   font-weight: bold;
   color: white;
 }
 .navbar .txt-large {
-  font-size: 23px;
+  /* padding: 10px; */
+  font-size: 15pt;
+  font-weight: 500;
   letter-spacing: 1.5px;
+  padding: 16px 12px;
 }
-.navbar .{
-  display: flex;
+.navbar .search {
+  color: rgb(106, 106, 106, 1);
+  padding: 18px;
+  width: 48px;
+}
+
+
+.navbar ul .btn-down {
   position: relative;
+  transition: all .3s;
 }
-
-
-.navbar .dropdown {
+.navbar ul .dropdown {
   list-style-type: none;
   margin: 0;
   top: 100%;
-  left: -30px;
+  left: -40px;
   padding: 0;
   display: none;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 250px;
   position: absolute;
 }
-.navbar .dropdown li a {
+.navbar ul .dropdown li a {
   background-color: white;
   color: rgb(138, 137, 137);
   text-decoration: none;
@@ -64,11 +109,11 @@ header {
   padding: 10px 40px;
   display: block;
 }
-.navbar .dropdown li a:hover {
+.navbar ul .dropdown li a:hover {
   color: rgb(66, 66, 66);;
   cursor: pointer;
 }
-.navbar .dropdown:hover ul {
+.navbar ul .btn-down:hover ul {
   display: flex;
 }
 header .container {
@@ -103,7 +148,7 @@ header .customer .product {
 
 header .container .contact {
   width: 25%;
-  margin-top: -20px;
+  margin-top: -15px;
 }
 header .container .contactus {
   width: 100%;

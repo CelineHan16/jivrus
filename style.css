@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ header {
   max-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .navbar {
   /* background-color: black; */
@@ -19,7 +19,8 @@ header {
 }
 .navbar nav {
   display: flex;
-  justify-content: flex-end;
+  /* position: fixed; */
+  justify-content: space-between;
 }
 .navbar nav .jivrus {
   height: 56px;
@@ -34,15 +35,17 @@ header {
 }
 .navbar nav .list {
   display: flex;
-  
-  
+  width: auto;
+  margin-left: 300px;
 }
-.navbar ul li, .point {
+.navbar ul li,
+.point {
   display: inline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.navbar ul li, a i { 
-  padding: 0 13px;
+.navbar ul li,
+a i {
+  padding: 0 8px;
 }
 .navbar ul li i {
   color: rgb(106, 106, 106, 1);
@@ -63,7 +66,7 @@ header {
   text-decoration: none;
   color: rgb(106, 106, 106, 1);
   display: inline-block;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .navbar ul li a:hover {
   color: rgb(202, 198, 198);
@@ -84,25 +87,29 @@ header {
   padding: 18px;
   width: 48px;
 }
-
+.navbar .search:hover {
+  cursor: pointer;
+}
 
 .navbar ul .btn-down {
   position: relative;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .navbar ul .dropdown {
   list-style-type: none;
   margin: 0;
-  top: 100%;
+  top: 105%;
   left: -40px;
   padding: 0;
   display: none;
   flex-direction: column;
-  min-width: 250px;
+  min-width: 230px;
   position: absolute;
+  background-color: white;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .navbar ul .dropdown li a {
-  background-color: white;
+  
   color: rgb(138, 137, 137);
   text-decoration: none;
   font-size: 16px;
@@ -110,15 +117,15 @@ header {
   display: block;
 }
 .navbar ul .dropdown li a:hover {
-  color: rgb(66, 66, 66);;
+  color: rgb(66, 66, 66);
   cursor: pointer;
 }
 .navbar ul .btn-down:hover ul {
   display: flex;
 }
 header .container {
-  max-width: 1150px;
-  margin: 0 auto;
+  margin: 0 38.5px;
+  padding: 56px 48px;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -148,13 +155,15 @@ header .customer .product {
 
 header .container .contact {
   width: 25%;
-  margin-top: -15px;
+  padding: 0 14px;
+  vertical-align: top;
 }
 header .container .contactus {
   width: 100%;
   font-size: 16px;
   padding: 8px;
   border: 1px solid rgb(212, 7, 110);
+  background-color: white;
   border-radius: 3px;
   margin: 0 0 16px;
 }
@@ -165,4 +174,45 @@ header .container .contactus a {
 header .container .author {
   text-align: center;
   width: 90%;
+}
+header .godown {
+  font-size: 40px;
+  color: gray;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: all .2s;
+}
+header .godown:hover {
+  cursor: pointer;
+  color: lightgray;
+}
+body section.container {
+  padding: 30px;
+}
+body section.container .maintaining {
+  display: flex;
+  margin: 0 38.5px;
+  padding: 0 48px;
+
+}
+body section.container .maintaining .sentence {
+  padding: 8px;
+  color: rgba(208,23,82,1);
+}
+body section.container .maintaining .sentence .first-sentence {
+  font-family: Roboto, sans-serif;
+  font-size: 26pt;
+  font-weight: 700;line-height: 1.5;
+}
+body section.container .maintaining .sentence .second-sentence {
+  font-family: Roboto, sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+  line-height: 1.56;
+  margin-top: 20px;
 }

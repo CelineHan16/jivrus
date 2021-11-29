@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(250, 233, 236);
 }
 * {
   box-sizing: border-box;
@@ -109,7 +110,6 @@ a i {
   box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .navbar ul .dropdown li a {
-  
   color: rgb(138, 137, 137);
   text-decoration: none;
   font-size: 16px;
@@ -131,10 +131,13 @@ header .container {
   color: white;
 }
 header .customer {
-  width: 650px;
+  width: 690px;
   font-size: 30px;
   text-align: center;
   position: relative;
+  margin-top: -25px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
 }
 header .customer .phrase {
   padding-bottom: 18px;
@@ -147,7 +150,7 @@ header .customer .phrase::after {
   border: 1px solid rgb(173, 4, 89);
   position: absolute;
   top: 200px;
-  left: 270px;
+  left: 300px;
 }
 header .customer .product {
   margin-top: 45px;
@@ -156,7 +159,6 @@ header .customer .product {
 header .container .contact {
   width: 25%;
   padding: 0 14px;
-  vertical-align: top;
 }
 header .container .contactus {
   width: 100%;
@@ -166,10 +168,11 @@ header .container .contactus {
   background-color: white;
   border-radius: 3px;
   margin: 0 0 16px;
-}
-header .container .contactus a {
   text-decoration: none;
   color: rgb(212, 7, 110);
+}
+header .container .contactus:hover {
+  cursor: pointer;
 }
 header .container .author {
   text-align: center;
@@ -185,29 +188,29 @@ header .godown {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 header .godown:hover {
   cursor: pointer;
   color: lightgray;
 }
 body section.container {
-  padding: 30px;
+  padding: 30px 0;
 }
 body section.container .maintaining {
   display: flex;
   margin: 0 38.5px;
   padding: 0 48px;
-
 }
 body section.container .maintaining .sentence {
   padding: 8px;
-  color: rgba(208,23,82,1);
+  color: rgba(208, 23, 82, 1);
 }
 body section.container .maintaining .sentence .first-sentence {
   font-family: Roboto, sans-serif;
   font-size: 26pt;
-  font-weight: 700;line-height: 1.5;
+  font-weight: 700;
+  line-height: 1.5;
 }
 body section.container .maintaining .sentence .second-sentence {
   font-family: Roboto, sans-serif;
@@ -215,4 +218,266 @@ body section.container .maintaining .sentence .second-sentence {
   font-weight: 700;
   line-height: 1.56;
   margin-top: 20px;
+}
+body section.container .maintaining .start {
+  padding-left: 150px;
+}
+body section.container .maintaining .start button {
+  background-color: rgba(208, 23, 82, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 5px;
+  width: 350px;
+}
+body section.container .maintaining .start button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.534);
+}
+.maintaining {
+  display: flex;
+  margin: 0 38.5px;
+  padding: 0 48px;
+}
+body section.hot-pink {
+  background-color: rgba(208, 23, 82, 1);
+}
+body section .maintaining .heading {
+  color: rgba(250, 232, 238, 1);
+  font-family: Roboto, sans-serif;
+  font-size: 26pt;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+}
+.hundred {
+  width: 100%;
+}
+body section.container2 .hundred .maintaining .hundred {
+  padding: 0 1.25%;
+}
+body section.container2 {
+  padding: 24px 0;
+}
+body section.container2 .hundred .maintaining h3 {
+  color: rgba(208, 23, 82, 1);
+  font-family: Roboto, sans-serif;
+  font-size: 13pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.63;
+}
+.row {
+  display: flex;
+}
+.col {
+  flex: 1 0 0;
+  padding: 0 14px;
+}
+.col-1 {
+  flex: 0 0 8.33333333%;
+}
+.col-2 {
+  flex: 0 0 16.66666667%;
+}
+.col-3 {
+  flex: 0 0 25%;
+}
+.col-4 {
+  flex: 0 0 33.3333333%;
+}
+.col-5 {
+  flex: 0 0 41.66666667%;
+}
+body section.container2 .hundred .maintaining .col img {
+  width: 100%;
+}
+body section.container .hundred .maintaining .start {
+  padding: 0;
+  margin: 0 auto;
+}
+body section.container2 .hundred .maintaining .col-txt {
+  width: 777px;
+  padding: 0 1.875%;
+  margin: 0;
+}
+body section.container2 .hundred .maintaining .col-txt h3 {
+  padding: 8px;
+  margin: 0;
+  height: 100px;
+}
+body section.container2 .hundred .maintaining .col-img {
+  width: 16.666667%;
+  padding: 0 7.5%;
+}
+.white-bg {
+  background-color: white;
+}
+body section.container2 .hundred .maintaining .col-txt ul {
+  padding: 8px;
+  list-style-type: square;
+  color: rgba(208, 23, 82, 1);
+  margin: 0;
+}
+body section.container2 .hundred .maintaining .col-txt ul h3 {
+  height: 30px;
+  color: #0b5394;
+}
+body section.container2 .hundred .maintaining .diagram {
+  margin: 0 5.333333%;
+}
+body section.container .hundred .maintaining .start button.read {
+  color: rgba(208, 23, 82, 1);
+  background-color: white;
+  border: 1px solid rgba(208, 23, 82, 1);
+}
+body section.container .hundred .maintaining .start button.read:hover {
+  box-shadow: none;
+  background-color: rgba(208, 23, 82, 0.144);
+}
+body section.container2 .hundred .maintaining .col h3 {
+  font-family: "Oswald", sans-serif;
+  color: #0b5394;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  line-height: 1.63;
+  text-align: right;
+  padding: 8px;
+  margin: 0;
+}
+body section.container2 .hundred .maintaining .col h3:last-of-type {
+  margin-top: 18px;
+}
+body section.container2 .hundred .maintaining .cent h3 {
+  text-align: center;
+}
+body section.container2 .hundred .maintaining .cent {
+  padding: 0 25%;
+}
+body section .maintaining .beginning {
+  text-align: start;
+  margin-left: 20px;
+}
+section .line {
+  border: 1px solid rgba(136, 135, 135, 0.4);
+  width: 100%;
+}
+section .new {
+  margin-top: 10px;
+}
+.coast {
+  padding: 0 15%;
+}
+.rel {
+  padding: 0 3%;
+}
+.ral {
+  padding: 0 3.75%;
+}
+.rela {
+  padding: 0 5%;
+}
+.relal {
+  padding: 0 7.25%;
+}
+body section.container2 .hundred .maintaining .partners {
+  padding: 8px;
+}
+body section.container2 .hundred .maintaining .partners h1 {
+  color: rgba(208, 23, 82, 1);
+  font-size: 26pt;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.5;
+}
+body section.container2 .hundred .maintaining .rel h3,
+.rela h3 {
+  margin: 0;
+}
+body section.container2 .hundred .maintaining h3 a {
+  color: rgba(208, 23, 82, 1);
+}
+body section.container2 .hundred .maintaining .card {
+  border: solid 2px lightblue;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+body section.container2 .hundred .maintaining .card h3,
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+}
+body section.container2 .hundred .maintaining .card h3 {
+  font-size: 1.17em;
+}
+body section.container2 .hundred .maintaining .card h1 {
+  font-size: 2em;
+}
+section.container2 .hundred .maintaining h6 {
+  margin: 0;
+}
+section.container2 .hundred .maintaining ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section.container2 .hundred .maintaining ul li {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 11.5px;
+  line-height: 1.2;
+  margin-top: 0px;
+  font-weight: 200;
+}
+section.container2 .hundred .maintaining ul li a {
+  color: black;
+  font-size: 11.5px;
+  line-height: 1.2;
+  margin-top: 0px;
+  font-weight: 200;
+}
+footer section.container2 .maintaining .heading {
+  color: rgba(208, 23, 82, 1);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+section.container2 .hundred .maintaining span {
+  font-family: "Open Sans";
+  font-size: 12pt;
+  font-weight: normal;
+  vertical-align: baseline;
+  color: rgba(33, 33, 33, 1);
+  margin: 0 auto;
+}
+section.container2 .hundred .maintaining .under {
+  color: rgba(208, 23, 82, 1);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.63;
+  text-align: right;
+  margin-bottom: 25px;
+}
+section.container2 .hundred .maintaining .last {
+  color: rgba(33, 33, 33, 1);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 1.56;
+  text-align: center;
+  margin: 0 auto;
+}
+section.container2 .hundred .maintaining .last a {
+  color: rgba(33, 33, 33, 1);
 }

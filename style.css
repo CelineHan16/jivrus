@@ -323,6 +323,10 @@ body section.container2 .hundred .maintaining .col-txt ul {
   color: rgba(208, 23, 82, 1);
   margin: 0;
 }
+body section.container2 .hundred .maintaining .col-txt ul li {
+  color: rgba(208, 23, 82, 1);
+  font-size: 16px;
+}
 body section.container2 .hundred .maintaining .col-txt ul h3 {
   height: 30px;
   color: #0b5394;
